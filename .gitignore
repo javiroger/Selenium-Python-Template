@@ -2,3 +2,5 @@
 /venv/
 /geckodriver.log
 /.idea/
+
+__pycache__
