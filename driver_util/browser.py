@@ -1,7 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.microsoft import EdgeDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.microsoft import IEDriverManager
 
 
@@ -17,7 +17,7 @@ class Browser(object):
         elif browsername == "chrome":
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
         elif browsername == "edge":
-            self.driver = webdriver.Edge(EdgeDriverManager().install())
+            self.driver = webdriver.Edge(EdgeChromiumDriverManager().install())
         elif browsername == "ie":
             self.driver = webdriver.Ie(IEDriverManager().install())
         else:
