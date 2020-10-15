@@ -12,7 +12,7 @@ pipenv install
 ```
 
 ### How to run?
-Issue the below commands in project root directory
+Issue the below commands in project root directory (Remember to activate pipenv)
 
 ```javascript
 python -m unittest
