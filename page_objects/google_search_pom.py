@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 class GoogleSearchPage:
-    SEARCHBOX = (By.ID, 'lst-ib')
+    SEARCHBOX = (By.NAME, 'q')
 
     def __init__(self, driver):
         self.driver = driver
