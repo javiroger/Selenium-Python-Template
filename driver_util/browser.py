@@ -10,15 +10,15 @@ class Browser(object):
     def __init__(self):
         self.driver = None
 
-    def getbrowser(self, browsername):
+    def get_browser(self, browser_name):
 
-        if browsername == "firefox":
+        if browser_name == "firefox":
             self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-        elif browsername == "chrome":
+        elif browser_name == "chrome":
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        elif browsername == "edge":
+        elif browser_name == "edge":
             self.driver = webdriver.Edge(EdgeChromiumDriverManager().install())
-        elif browsername == "ie":
+        elif browser_name == "ie":
             self.driver = webdriver.Ie(IEDriverManager().install())
         else:
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
