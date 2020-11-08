@@ -10,4 +10,4 @@ selenium = "==3.141.0"
 webdriver-manager = "==3.2.2"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
